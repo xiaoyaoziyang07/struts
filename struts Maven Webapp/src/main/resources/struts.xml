@@ -8,7 +8,7 @@
 	<constant name="struts.ui.theme" value="simple"></constant>
 	<constant name="struts.configuration.xml.reload" value="true"></constant>
 
-	<package name="validate" namespace="" extends="struts-default">
+	<package name="validate" namespace="/" extends="struts-default">
 		<action name="first" class="cn.amichina.FirstAction" method="execute">
 			<result name="success">/WEB-INF/validate/success.jsp</result>
 			<result name="input">/index.jsp</result>

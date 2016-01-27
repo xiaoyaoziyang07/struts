@@ -28,5 +28,6 @@
   	密码：<s:password name="password"/><br/>
   	<s:submit/>
   </s:form>
+  <a href="<s:url action="index" namespace="config-browser" />">Launch the configuration browser</a>
   </body>
 </html>
