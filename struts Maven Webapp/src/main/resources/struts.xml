@@ -5,13 +5,22 @@
 <struts>
 	<constant name="struts.action.extension" value="action,,"></constant>
 	<constant name="struts.devMode" value="true"></constant>
-	<constant name="struts.ui.theme" value="simple"></constant>
+<!-- 	<constant name="struts.ui.theme" value="simple"></constant> -->
 	<constant name="struts.configuration.xml.reload" value="true"></constant>
 
 	<package name="validate" namespace="/" extends="struts-default">
 		<action name="first" class="cn.amichina.FirstAction" method="execute">
 			<result name="success">/WEB-INF/validate/success.jsp</result>
 			<result name="input">/index.jsp</result>
+		</action>
+	</package>
+	
+	<package name="ajax" namespace="/ajax" extends="struts-default">
+		<action name="first" class="cn.amichina.AjaxAction" method="execute">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+			</result>
 		</action>
 	</package>
 </struts>

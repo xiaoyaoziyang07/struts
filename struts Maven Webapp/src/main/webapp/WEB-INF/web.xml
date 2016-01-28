@@ -8,6 +8,10 @@
 	<filter>
 		<filter-name>struts2</filter-name>
 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+<!-- 		<init-param> -->
+<!-- 			<param-name>loggerFactory</param-name> -->
+<!-- 			<param-value>com.opensymphony.xwork2.util.logging.commons.CommonsLoggerFactory</param-value> -->
+<!-- 		</init-param> -->
 	</filter>
 	<filter-mapping>
 		<filter-name>struts2</filter-name>

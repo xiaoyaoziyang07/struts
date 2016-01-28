@@ -19,15 +19,16 @@
   </head>
   
   <body>
-  <s:form action="first.action" namespace="/">
-  <s:fielderror fieldName="nameError"></s:fielderror>
-  	用户名：<s:textfield name="name"/><br/>
+  <s:form action="first.action">
+  <s:fielderror fieldName="nameError" errorPosition="bottom"/>
+  	<s:textfield name="name" label="用户名"/><br/>
   	<s:fielderror fieldName="ageError"/>
-  	年龄：<s:textfield name="age"/><br/>
+  	<s:textfield name="age" label="年龄"/><br/>
   	<s:fielderror fieldName="passwordError"/>
-  	密码：<s:password name="password"/><br/>
+  	<s:password name="password" label="密码"/><br/>
   	<s:submit/>
   </s:form>
   <a href="<s:url action="index" namespace="config-browser" />">Launch the configuration browser</a>
+  <a href="ajax/first" >dianji</a>
   </body>
 </html>
