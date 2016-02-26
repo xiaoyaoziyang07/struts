@@ -13,6 +13,10 @@
 			<result name="success">/WEB-INF/validate/success.jsp</result>
 			<result name="input">/index.jsp</result>
 		</action>
+		<action name="test" class="cn.amichina.ModelDrivenTest" method="execute">
+			<result name="success">/WEB-INF/validate/success.jsp</result>
+			<result name="input">/1.jsp</result>
+		</action>
 	</package>
 	
 	<package name="ajax" namespace="/ajax" extends="struts-default">
