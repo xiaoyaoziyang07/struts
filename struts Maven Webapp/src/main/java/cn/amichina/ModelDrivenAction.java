@@ -4,7 +4,7 @@ import cn.amichina.model.People;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class ModelDrivenTest extends ActionSupport {
+public class ModelDrivenAction extends ActionSupport {
 	
 	private People people;
 
