@@ -5,8 +5,8 @@
 	<artifactId>struts</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>struts Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<name>struts_Maven</name>
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -59,7 +59,11 @@
 			<artifactId>commons-math3</artifactId>
 			<version>3.6</version>
 		</dependency>
-
+		<dependency>
+			<groupId>ch.ethz.ganymed</groupId>
+			<artifactId>ganymed-ssh2</artifactId>
+			<version>build210</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>struts</finalName>
