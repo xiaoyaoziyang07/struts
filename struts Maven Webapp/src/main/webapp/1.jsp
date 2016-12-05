@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -18,9 +18,12 @@
   
   <body>
   	<form action="test">
-  		<input type="text" name="people.name"/><br/>
-  		<input type="text" name="people.age"/><br/>
-  		<input type="submit" value="tijiao">
+  		姓名：<input type="text" name="name"/><br/>
+  		年龄：<input type="text" name="age"/><br/>
+  		兴趣：<input type="checkbox" name="hobby" value="football"/>足球
+             <input type="checkbox" name="hobby" value="basketball"/>篮球
+             <input type="checkbox" name="hobby" value="ppball"/>乒乓球
+  		<input type="submit" value="提交">
   	</form>
   </body>
 </html>

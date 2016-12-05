@@ -1,28 +1,44 @@
 package cn.amichina;
 
-import cn.amichina.model.People;
+import java.util.Arrays;
 
 import com.opensymphony.xwork2.ActionSupport;
 
 public class ModelDrivenAction extends ActionSupport {
 	
-	private People people;
-
+	private String name;
+	private int age;
+	private String[] hobby;
+	
 	@Override
 	public String execute() throws Exception {
-		System.out.println(people.getName());
-		System.out.println(people.getAge());
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(Arrays.toString(hobby));
 		return SUCCESS;
 	}
 
-	public People getPeople() {
-		return people;
+	public String getName() {
+		return name;
 	}
 
-	public void setPeople(People people) {
-		this.people = people;
+	public void setName(String name) {
+		this.name = name;
 	}
-	
-	
 
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String[] getHobby() {
+		return hobby;
+	}
+
+	public void setHobby(String[] hobby) {
+		this.hobby = hobby;
+	}
 }

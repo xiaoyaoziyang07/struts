@@ -19,13 +19,16 @@
   </head>
   
   <body>
-  <s:form action="first.action">
-  <s:fielderror fieldName="nameError" errorPosition="bottom"/>
+  <s:form action="first">
+<!--   <s:fielderror fieldName="nameError"/> -->
   	<s:textfield name="name" label="用户名"/><br/>
-  	<s:fielderror fieldName="ageError"/>
+<!--   	<s:fielderror fieldName="ageError"/> -->
   	<s:textfield name="age" label="年龄"/><br/>
-  	<s:fielderror fieldName="passwordError"/>
+<!--   	<s:fielderror fieldName="passwordError"/> -->
   	<s:password name="password" label="密码"/><br/>
+    <s:checkbox name="hobby" value="football" label="足球"/>
+  	<s:checkbox name="hobby" value="basketball" label="篮球"/>
+  	<s:checkbox name="hobby" value="ppball" label="乒乓球"/>
   	<s:submit/>
   </s:form>
   <a href="<s:url action="index" namespace="config-browser" />">Launch the configuration browser</a>
